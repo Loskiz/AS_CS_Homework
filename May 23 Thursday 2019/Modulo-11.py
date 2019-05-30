@@ -6,8 +6,8 @@ for i in l:
     i=eval(i)
     total+=i*muter
     muter+=1
-CD = total%11
+CD = 11-total%11
 if CD != 10:
     print('CD is:',CD)
 else:
-    print('CD is invalid')
+    print('CD is X')
