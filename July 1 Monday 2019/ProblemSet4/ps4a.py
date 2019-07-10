@@ -282,15 +282,17 @@ def playGame(wordList):
             wordList = loadWords()
             playHand(hand, wordList, HAND_SIZE)
             continue
-        if option =='r':
+        elif option =='r':
             if hand == {}:
                 print("No previous hand yet")
                 continue
             else:
                 wordList = loadWords()
                 playHand(hand, wordList, HAND_SIZE)
-        if option =='e':
+        elif option =='e':
             break
+        else:
+            print('Please input a valid option!')
     print("Game over\n")
 
 
