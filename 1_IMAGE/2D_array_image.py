@@ -36,5 +36,8 @@ def clip(image):
    
 image=[[245,2,3],[2,3,4]]
 a=ligten(image)
+b=flip(image)
+b=clip(image)
 print(a)
+print(b)
 
