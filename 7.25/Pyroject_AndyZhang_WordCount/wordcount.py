@@ -68,6 +68,7 @@ def unknown_word_count(book,wordlist):
     should_known=wordlistL
     unknownwords=check_words(content,should_known)
     return len(unknownwords)
+
 book='alice_in_wonderland.txt'
 wordlist='vocab.txt'
 total_none_dup_wordcount=len(dupremove(file_to_list(book)))
